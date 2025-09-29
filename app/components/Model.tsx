@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import { MeshTransmissionMaterial, useGLTF, Text, OrbitControls } from "@react-three/drei";
 import { useFrame, useThree } from '@react-three/fiber'
 import { useControls } from 'leva'
+import * as THREE from 'three'
 
 export default function Model() {
     const { nodes } = useGLTF("/medias/lavalampMesh.glb");
