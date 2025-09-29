@@ -5,7 +5,12 @@ import { Environment } from '@react-three/drei'
 
 export default function Page() {
   return (
-    <Canvas style={{background: '#000000'}}>
+    <Canvas       
+    style={{
+        background: '#000000',
+        width: '100vw',
+        height: '100vh',
+      }}>
         <Model />
         <directionalLight intensity={2} position={[0, 2, 3]}/>
         <Environment preset="city" />
