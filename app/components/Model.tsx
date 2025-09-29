@@ -5,7 +5,7 @@ import { useControls } from 'leva'
 import * as THREE from 'three'
 
 export default function Model() {
-    const { nodes } = useGLTF("/medias/lavalampMesh4.glb");
+    const { nodes } = useGLTF("/medias/lavalampMesh5.glb");
     // const { nodes } = useGLTF("/medias/skull.glb");
     const { viewport } = useThree()
     const torus = useRef<THREE.Mesh | null>(null);
