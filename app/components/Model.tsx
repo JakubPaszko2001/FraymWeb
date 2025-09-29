@@ -7,10 +7,12 @@ export default function Model() {
     const { nodes } = useGLTF("/medias/lavalampMesh.glb");
     // const { nodes } = useGLTF("/medias/skull.glb");
     const { viewport } = useThree()
-    const torus = useRef(null);
+    const torus = useRef<THREE.Mesh | null>(null);
     
-    useFrame( () => {
+    useFrame(() => {
+      if (torus.current) {
         torus.current.rotation.y += 0.005
+      }
     })
 
     const materialProps = useControls({
